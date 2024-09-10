@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colgate University Ski and Snowboard Club</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            line-height: 1.6;
+        }
+        /* Add this part for the video background */
+        #background-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+        .top-nav {
+            background-color: #821019;
+            color: white;
+            padding: 10px 0;
+        }
+        .top-nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: flex-end;
+        }
+        .top-nav ul li {
+            margin: 0 15px;
+        }
+        .top-nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        .main-nav {
+            background-color: white;
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+        }
+        .main-nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        .main-nav ul li {
+            margin: 0 20px;
+        }
+        .main-nav ul li a {
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .hero {
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            position: relative; /* Added to position video in the background */
+        }
+        .hero-content {
+            background-color: rgba(0,0,0,0.5);
+            padding: 20px;
+        }
+        .hero h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+        .bottom-nav {
+            background-color: #f8f8f8;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .bottom-nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        .bottom-nav ul li {
+            margin: 0 15px;
+        }
+        .bottom-nav ul li a {
+            color: #333;
+            text-decoration: none;
+        }
+        main {
+            max-width: 1200px;
+            margin: 2em auto;
+            padding: 0 1em;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            background-color: #f8f8f8;
+            border-radius: 5px;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .cta-button {
+            display: inline-block;
+            background-color: #821019;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 1em;
+        }
+    </style>
+</head>
+<body>
+    <nav class="top-nav">
+        <ul>
+            <li><a href="#trips">Trips</a></li>
+            <li><a href="#join">Join Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <nav class="main-nav">
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#destinations">Destinations</a></li>
+            <li><a href="#gear">Gear Tips</a></li>
+            <li><a href="#ski-vs-board">Ski vs Snowboard</a></li>
+        </ul>
+    </nav>
+    <div class="hero">
+        <video autoplay muted loop id="background-video">
+            <source src="C:\Users\Harun\Downloads\CSSC WEBSITE\4274798-uhd_3840_2160_25fps.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="hero-content">
+            <h1>Colgate University<br>Ski and Snowboard Club</h1>
+            <p>Embrace the thrill of winter sports with us!</p>
+        </div>
+    </div>
+    
+    <nav class="bottom-nav">
+        <ul>
+            <li><a href="#beginner-tips">Beginner Tips</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#gallery">Photo Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="about">
+            <h2>About Us</h2>
+            <p>Welcome to the Colgate University Ski and Snowboard Club! We're a group of passionate winter sports enthusiasts dedicated to hitting the slopes and having a great time. Whether you're a seasoned pro or a complete beginner, we have something for everyone!</p>
+        </section>
+        
+        <section id="trips">
+            <h2>Trip Schedule</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Upcoming Trips</h3>
+                    <ul>
+                        <li>Weekend Trip to Whiteface Mountain - February 15-17</li>
+                        <li>Day Trip to Greek Peak - March 5</li>
+                        <li>Spring Break Adventure at Killington - March 20-25</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Sign-Up Process</h3>
+                    <ol>
+                        <li>Check our trip schedule</li>
+                        <li>Fill out the online registration form</li>
+                        <li>Pay the trip fee</li>
+                        <li>Attend the pre-trip meeting</li>
+                    </ol>
+                    <a href="#" class="cta-button">Sign Up for a Trip</a>
+                </div>
+            </div>
+        </section>
+        
+        <section id="destinations">
+            <h2>Where We Go</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Popular Destinations</h3>
+                    <ul>
+                        <li>Whiteface Mountain</li>
+                        <li>Greek Peak</li>
+                        <li>Killington Resort</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Mountain Info</h3>
+                    <p>Check out these links for more information:</p>
+                    <ul>
+                        <li><a href="https://www.skicny.com/labrador/" target="_blank">Labrador Mountain Website</a></li>
+                        <li><a href="https://greekpeak.net/" target="_blank">Greek Peak Website</a></li>
+                        <li><a href="https://www.skicny.com/song/" target="_blank">Song Resort Website</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <section id="gear">
+            <h2>What to Wear</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Essential Gear</h3>
+                    <ul>
+                        <li>Thick, warm socks (boots can be uncomfortable)</li>
+                        <li>Waterproof outer shell or jacket</li>
+                        <li>Waterproof gloves or mittens</li>
+                        <li>Thermal base layers</li>
+                        <li>Insulating mid-layer (fleece or wool)</li>
+                        <li>Helmet (safety first!)</li>
+                        <li>Goggles</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Pro Tips</h3>
+                    <ul>
+                        <li>Layer up! It's easier to remove layers if you get too warm.</li>
+                        <li>Avoid cotton - it retains moisture and can make you cold.</li>
+                        <li>Don't forget sunscreen and lip balm - the sun reflects off the snow!</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <section id="ski-vs-board">
+            <h2>Skiing vs Snowboarding</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Skiing</h3>
+                    <ul>
+                        <li>Easier to learn initially</li>
+                        <li>Can be challenging to master advanced techniques</li>
+                        <li>You can typically enjoy going down the hill on your first day</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Snowboarding</h3>
+                    <ul>
+                        <li>Can be more challenging to learn at first</li>
+                        <li>Once you get the basics, progress can be quicker</li>
+                        <li>Expect to spend most of your first day learning the fundamental stance and movements</li>
+                    </ul>
+                </div>
+            </div>
+            <p>Remember, both skiing and snowboarding are fantastic ways to enjoy the winter. Choose whichever appeals to you more, and don't be afraid to try both!</p>
+        </section>
+        
+        <section id="beginner-tips">
+            <h2>Beginner's Corner</h2>
+            <p>New to winter sports? Don't worry! Here are some tips to help you get started:</p>
+            <ul>
+                <li>Take a lesson - it's the fastest way to learn proper technique and safety</li>
+                <li>Start on gentle slopes and progress gradually</li>
+                <li>Practice falling safely - it's part of the learning process!</li>
+                <li>Stay hydrated and take breaks when needed</li>
+                <li>Most importantly, have fun and don't be too hard on yourself!</li>
+            </ul>
+        </section>
+        
+        <section id="join">
+            <h2>Join the Club</h2>
+            <p>Ready to hit the slopes with us? Here's how to join:</p>
+            <ol>
+                <li>Attend our information session at the beginning of the semester</li>
+                <li>Fill out the membership form (available at the info session or online)</li>
+                <li>Pay the annual membership fee</li>
+                <li>Join our mailing list to stay updated on trips and events</li>
+            </ol>
+            <a href="#" class="cta-button">Become a Member</a>
+        </section>
+        
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Have questions? We'd love to hear from you!</p>
+            <p>Email: skiclub@colgate.edu</p>
+            <p>Instagram: @colgateskinsnowboard</p>
+            <p>Club meetings: Every Wednesday at 7 PM in the Student Union</p>
+        </section>
+    </main>
+</body>
+</html>
